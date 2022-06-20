@@ -1,0 +1,1 @@
+requires_ansible: ">=2.9.10" # min for netcommon >3.0 support
