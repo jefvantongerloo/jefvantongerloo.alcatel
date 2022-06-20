@@ -18,11 +18,11 @@ Ansible collection to support Alcatel-Lucent Enterprise OmniSwitch devices (aos6
 
 <!-- Collection distribution is via Ansible-Galaxy -->
 
-Install the Ansible [netcommon](https://galaxy.ansible.com/ansible/netcommon) collection:
+<!-- Install the Ansible [netcommon](https://galaxy.ansible.com/ansible/netcommon) collection:
 
 ```bash
 ansible-galaxy collection install ansible.netcommon
-```
+``` -->
 
 Install the Python [textfsm-aos](https://github.com/jefvantongerloo/textfsm-aos) package:
 ```bash
