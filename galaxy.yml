@@ -1,0 +1,24 @@
+namespace: "jefvantongerloo"
+name: "aos"
+version: 0.1.0
+readme: "README.md"
+authors:
+  - "Jef Vantongerloo <jefvantongerloo@gmail.com>"
+description: "Ansible collection to support Alcatel-Lucent Enterprise OmniSwitch devices (aos6 & aos8) "
+license:
+- "CC-BY-NC-ND-4.0"
+license_file: ""
+tags: 
+  - ale
+  - alcatel
+  - aos
+  - omniswitch
+  - network
+  - networkautomation
+dependencies:
+  "ansible.netcommon": ">=3.0.0"
+repository: "https://github.com/jefvantongerloo/jefvantongerloo.aos"
+documentation: "http://docs.example.com"
+homepage: "https://github.com/jefvantongerloo/jefvantongerloo.aos"
+issues: "https://github.com/jefvantongerloo/jefvantongerloo.aos/issues"
+build_ignore: []
