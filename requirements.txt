@@ -1,1 +1,2 @@
 textfsm-aos>=1.0.0 # minimum version
+ansible-pylibssh
