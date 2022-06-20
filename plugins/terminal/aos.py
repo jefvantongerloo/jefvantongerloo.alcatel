@@ -38,7 +38,6 @@ short_description: Terminal support for Alcatel-Lucent Enterprise aos6 and aos8 
 
 import re
 from ansible.plugins.terminal import TerminalBase
-from ansible.errors import AnsibleConnectionFailure
 
 
 class TerminalModule(TerminalBase):
