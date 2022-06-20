@@ -16,7 +16,7 @@ Ansible collection to support Alcatel-Lucent Enterprise OmniSwitch devices (aos6
 
 ## Installation
 
-Collection distribution is via Ansible-Galaxy
+Collection distribution is via[ Ansible-Galaxy](https://galaxy.ansible.com/jefvantongerloo/aos)
 
 <!-- Install the Ansible [netcommon](https://galaxy.ansible.com/ansible/netcommon) collection:
 
