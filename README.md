@@ -16,7 +16,7 @@ Ansible collection to support Alcatel-Lucent Enterprise OmniSwitch devices (aos6
 
 ## Installation
 
-<!-- Collection distribution is via Ansible-Galaxy -->
+Collection distribution is via Ansible-Galaxy
 
 <!-- Install the Ansible [netcommon](https://galaxy.ansible.com/ansible/netcommon) collection:
 
@@ -24,14 +24,14 @@ Ansible collection to support Alcatel-Lucent Enterprise OmniSwitch devices (aos6
 ansible-galaxy collection install ansible.netcommon
 ``` -->
 
-Install the Python [textfsm-aos](https://github.com/jefvantongerloo/textfsm-aos) package:
+Install the Python [Textfsm-aos](https://github.com/jefvantongerloo/textfsm-aos) and [Ansible-pylibssh](https://github.com/ansible/pylibssh) packages:
 ```bash
-pip install textfsm-aos
+pip install -r requirements.txt
 ```
 
 To install the `jefvantongerloo.aos.aos` collection, use the following Ansible Galaxy CLI command:
 ```bash
-ansible-galaxy collection install jefvantongerloo.aos.aos
+ansible-galaxy collection install jefvantongerloo.aos
 ```
 
 You can also include it in the `requirements.yml` file and install it with `ansible-galaxy collection install -r requirements.yml`, using the format:
