@@ -42,21 +42,9 @@ description:
 import re
 import json
 
-from ansible.errors import AnsibleConnectionFailure
-
-# from ansible.module_utils.common._collections_compat import Mapping
 from ansible.module_utils._text import to_text
 from ansible.plugins.cliconf import CliconfBase
 from textfsm_aos import parser
-
-try:
-    from ansible_collections.ansible.netcommon.plugins.module_utils.network.common.utils import (
-        to_list,
-    )
-
-except ImportError:
-    # if netcommon is not installed, fallback for Ansible 2.8 and 2.9
-    from ansible.module_utils.network.common.utils import to_list
 
 
 class Cliconf(CliconfBase):
@@ -116,7 +104,7 @@ class Cliconf(CliconfBase):
         (device_info_raw,) = device_info_raw
 
         description_structured = re.search(
-            "^Alcatel-Lucent\sEnterprise\s(\S+)\s((\d+\.){3,}.*?(?=,)),\s\w+\s\d{1,2},\s\d{4,}.",
+            r"^Alcatel-Lucent\sEnterprise\s(\S+)\s((\d+\.){3,}.*?(?=,)),\s\w+\s\d{1,2},\s\d{4,}.",
             device_info_raw["description"],
         )
         description_model = description_structured.group(1)
