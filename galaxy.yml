@@ -8,13 +8,12 @@ description: "Ansible collection to support Alcatel-Lucent Enterprise OmniSwitch
 license:
 - "CC-BY-NC-ND-4.0"
 license_file: ""
-tags: 
+tags:
+  - networking 
   - ale
   - alcatel
   - aos
   - omniswitch
-  - network
-  - networkautomation
 dependencies:
   "ansible.netcommon": ">=3.0.0"
 repository: "https://github.com/jefvantongerloo/jefvantongerloo.aos"
