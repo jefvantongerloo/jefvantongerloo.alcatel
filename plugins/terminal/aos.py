@@ -53,8 +53,8 @@ class TerminalModule(TerminalBase):
 
     #: compiled bytes regular expressions as stderr
     terminal_stderr_re = [
-        re.compile(rb"Authentication failure", re.IGNORECASE),
-        re.compile(rb"[\r\n]ERROR:\s*.*[\r\n]+", re.IGNORECASE),
+        re.compile(rb"[\n|\r]+Authentication failure[\n|\r]+", re.IGNORECASE),
+        re.compile(rb"\^[\n|\r]+ERROR: Invalid entry: \".*\"", re.IGNORECASE),
     ]
 
     #: compiled bytes regular expressions to remove ANSI codes
