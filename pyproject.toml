@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "alcatel-ansible-collection"
+version = "0.1.1"
+description = "Ansible collection to support Alcatel-Lucent Enterprise OmniSwitch devices (aos6 & aos8)"
+authors = ["jefvantongerloo <jefvantongerloo@gmail.com>"]
+license = "CC-BY-NC-ND-4.0"
+readme = "README.md"
+packages = [{include = "alcatel_ansible_collection"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+textfsm-aos = "^1.1.1"
+ansible-pylibssh = "^1.1.0"
+ansible-core = "^2.14.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
