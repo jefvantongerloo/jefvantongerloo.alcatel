@@ -4,7 +4,7 @@ version: "0.1.1"
 readme: "README.md"
 authors:
   - "Jef Vantongerloo <jefvantongerloo@gmail.com>"
-description: "Ansible collection to support Alcatel-Lucent Enterprise OmniSwitch devices (aos6 & aos8) "
+description: "Ansible collection to support Alcatel-Lucent Enterprise OmniSwitch devices (aos6 & aos8)"
 license:
   - "CC-BY-NC-ND-4.0"
 license_file: ""
