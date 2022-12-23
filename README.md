@@ -1,16 +1,16 @@
-# Ansible Collection - jefvantongerloo.aos
+# Ansible Collection - jefvantongerloo.alcatel
 
-Ansible collection to support Alcatel-Lucent Enterprise OmniSwitch devices (aos6 &amp; aos8)
+Ansible collection to support Alcatel-Lucent Enterprise OmniSwitch aos devices (aos6 &amp; aos8)
 
 ## Supported connections
 
-The AOS collection supports network_cli connections.
+The Alcatel collection supports network_cli connections.
 
 ## Cliconf Plugins
 
 | Network OS                | Description                                                               |
 |---------------------------|---------------------------------------------------------------------------|
-| jefvantongerloo.aos.aos   | Use aos cliconf to run command on ALE aos platform                        |
+| jefvantongerloo.alcatel.aos   | Use aos cliconf to run command on ALE aos platform                        |
 
 ## Action Plugins
 
@@ -25,11 +25,11 @@ The AOS collection supports network_cli connections.
 
 | Name                              | Description                                                       |
 |-----------------------------------|-------------------------------------------------------------------|
-|  jefvantongerloo.aos.device_info  | Get ALE Omniswitch device information dictionary                  |
+|  jefvantongerloo.alcatel.device_info  | Get ALE Omniswitch device information dictionary                  |
 
 ## Installation
 
-Collection distribution is via[Ansible-Galaxy](https://galaxy.ansible.com/jefvantongerloo/aos)
+Collection distribution is via[Ansible-Galaxy](https://galaxy.ansible.com/jefvantongerloo/alcatel)
 
 Install the Python [Textfsm-aos](https://github.com/jefvantongerloo/textfsm-aos) and [Ansible-pylibssh](https://github.com/ansible/pylibssh) packages:
 
@@ -37,10 +37,10 @@ Install the Python [Textfsm-aos](https://github.com/jefvantongerloo/textfsm-aos)
 pip install -r requirements.txt
 ```
 
-You can install the `jefvantongerloo.aos` collection with the Ansible Galaxy CLI:
+You can install the `jefvantongerloo.alcatel` collection with the Ansible Galaxy CLI:
 
 ```bash
-ansible-galaxy collection install jefvantongerloo.aos
+ansible-galaxy collection install jefvantongerloo.alcatel
 ```
 
 You can also include it in the `requirements.yml` file and install it with `ansible-galaxy collection install -r requirements.yml`, using the format:
@@ -48,7 +48,7 @@ You can also include it in the `requirements.yml` file and install it with `ansi
 ```yaml
 ---
 collections:
-  - name: jefvantongerloo.aos
+  - name: jefvantongerloo.alcatel
 ```
 
 ## Usage
@@ -58,7 +58,7 @@ To use this collection make sure to set required inventory host parameters, for 
 ```yaml
 ---
 ansible_connection: ansible.netcommon.network_cli
-ansible_network_os: jefvantongerloo.aos.aos
+ansible_network_os: jefvantongerloo.alcatel.aos
 ansible_user: admin
 ansible_password: switch
 ```
@@ -76,7 +76,7 @@ ansible_password: switch
 
   tasks:
     - name: device_info test
-        jefvantongerloo.aos.device_info:
+        jefvantongerloo.alcatel.device_info:
         register: device_info
 
     - name: debug device_info

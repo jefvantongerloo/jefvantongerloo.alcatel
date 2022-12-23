@@ -402,14 +402,14 @@ files = [
 
 [[package]]
 name = "textfsm"
-version = "1.1.2"
+version = "1.1.3"
 description = "Python module for parsing semi-structured text into python tables."
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "textfsm-1.1.2-py2.py3-none-any.whl", hash = "sha256:f3d4e9bd4344935a08e6844e53d6220e2e4fb7e465bee51fa909152ed6bab406"},
-    {file = "textfsm-1.1.2.tar.gz", hash = "sha256:85a450b441aff04b1cac726bdb36f35534a5b196cca08c8bc14fddd879c4255c"},
+    {file = "textfsm-1.1.3-py2.py3-none-any.whl", hash = "sha256:dcbeebc6a6137bed561c71a56344d752e6dbc04ae5ea309252cb70fb97ccc9cd"},
+    {file = "textfsm-1.1.3.tar.gz", hash = "sha256:577ef278a9237f5341ae9b682947cefa4a2c1b24dbe486f94f2c95addc6504b5"},
 ]
 
 [package.dependencies]
@@ -418,21 +418,21 @@ six = "*"
 
 [[package]]
 name = "textfsm-aos"
-version = "1.1.1"
+version = "1.1.2"
 description = "Alcatel-Lucent Enterprise AOS CLI parsing (TextFSM)"
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "textfsm_aos-1.1.1-py3-none-any.whl", hash = "sha256:979824b1e01c4f8017ad6edd61e1f2091238c403f16c7c92d8975f66e022e353"},
-    {file = "textfsm_aos-1.1.1.tar.gz", hash = "sha256:5527791c676e57ab1b418e538e72e3f125ef92ea5fcf1fa085acf16ed70e512a"},
+    {file = "textfsm_aos-1.1.2-py3-none-any.whl", hash = "sha256:27ebd80608f667eda5576be403c1da2f3bad767629c5837d33634761043c1381"},
+    {file = "textfsm_aos-1.1.2.tar.gz", hash = "sha256:e0632e3a0a738af1c50f86ae9d857820841fe92876ec0129c645aeb10993479f"},
 ]
 
 [package.dependencies]
 PyYAML = ">=6.0,<7.0"
-textfsm = "1.1.2"
+textfsm = ">=1.1.0,<2.0.0"
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "3c07199269fb8b9bb398fbcc180d309174a169a7b2fb22806d1269823af99bbe"
+content-hash = "cd24453b283ae9548e7c1603cc727d8ed2aeb2f51737dffa6f1a931ed86fe928"
