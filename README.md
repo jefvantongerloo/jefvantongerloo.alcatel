@@ -156,3 +156,4 @@ ansible_password: switch
         src: tmp/vcboot.cfg
         dest: /flash/vcboot.cfg
         protocol: sftp
+```
