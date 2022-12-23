@@ -1,4 +1,4 @@
-# Jefvantongerloo.aos release notes
+# Jefvantongerloo.alcatel release notes
 
 ## [0.1.1] - Unreleased
 

@@ -35,7 +35,7 @@ author: Jef Vantongerloo (@jefvantongerloo)
 terminal: jefvantongerloo.aos.aos
 short_description: Terminal support for Alcatel-Lucent Enterprise aos6 and aos8 devices
 description:
-  - This plugin provides the pseudo terminal for connecting and setup channels for 
+  - This plugin provides the pseudo terminal for connecting and setup channels for
     sessions to Alcatel-Lucent Enterprise aos6 and aos8 network devices.
 """
 
